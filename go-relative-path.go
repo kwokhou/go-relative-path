@@ -18,7 +18,7 @@ func main() {
     relPath = "./" + relPath
   }
   // Remove file extensions
-  relPath = strings.TrimSuffix(path, filepath.Ext(path))
+  relPath = strings.TrimSuffix(relPath, filepath.Ext(relPath))
   // Print final result without newline
-  fmt.Print(relPath)
+  fmt.Print("'" + relPath + "'")
 }
